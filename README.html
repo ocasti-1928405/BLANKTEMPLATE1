@@ -20,18 +20,22 @@
 			<h3> Things to do Alphabetically</h3>
 			<ul>
 				<li><a href="thingPage.php?thingId=1">[begin loop]</a></li>
-				<li><a href="thingPage.php?thingId=2"><u>[event.name]</u></a></li>
-				<li><a href="thingPage.php?thingId=3">{end loop]</a></li>
+				<li><a href="thingPage.php?thingId=2"><u><font size="15"[event.name]</u></font></a></li>
+				<li><a href="thingPage.php?thingId=3">[end loop]</a></li>
+				<hr>
+				<li><a href="thingPage.php?thingId=4">Query:SELECT id, name FROM event ORDER BY name</a></li>
 			</ul>			
 		</div>
 		
 		<div id = "Content">
-		   <h3>{event.Name]</h3>
+		   <h3>[event.Name]</h3>
 		   <p>What:[event.type] </p>
   		   <p>When:[event.date]</p>
 		   <p>How Much:[event.price]</p>
 		   <p>Where:[location.street1] [location.street2] [location.city].[location.state.]
 			   [location.zip]
+			   <hr>
+			<p>Query:SELECT * FROM event + location WHERE event.id = "event_1"</p>	
 		</div>
 		<br clear="all"></br>
 		<div id = "Footer">
